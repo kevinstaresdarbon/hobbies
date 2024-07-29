@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I ❤️ Web Development</title>
+  </head>
+
+  <body>
+
+    <header>
+      <hr>
+      <h1>My Hobbies - Web Development</h1>
+      <hr>
+      <img src="../img/headerBanner.jpg" alt="White bearded dwarf using virtual reality headset with his hands raised" width="100%">
+      <hr>
+      <nav>
+        <h2>Navigation</h2>
+        <hr width="300px">
+        <ul>
+          <li>
+            <a href="../index.html"> Home </a>
+          </li>
+          <li>
+            <a href="./vr.html"> Virtual Reality </a>
+          </li>
+          <li>
+            <a href="./darkages.html"> Dark Ages of Camelot </a>
+          </li>
+        </ul>
+        <hr width="300px">
+      </nav>
+      <hr>
+    </header>
+
+    <main>
+      <h1>I ❤️ Web Development</h1>
+      <section>
+        <h2>&nbsp;My Tech Obsession</h2>
+        <p>&nbsp;&nbsp;My tech obsession began at the age of 6 when I first encountered a Sinclair ZX Spectrum 128k tape loading computer at my friends house where I would go to play "Spin Dizzy" and "Robocop".
+        <br>
+        &nbsp;&nbsp;Ever since then I have been fascinated by all things tech and gaming. I have been an I.T. hobbyist ever since.  I grew up playing on consoles like the sega "Master System", "SNES", "Playstation 2" and various "XBOX" flavours.
+        <br>
+        &nbsp;&nbsp;Naturally, I took an "A" level in Computing and took optional units in computing in the first year of my degree course learning OO programming languages like Java.
+        <br>
+        &nbsp;&nbsp;In recent years I have taken an interest in networking and dynamic websites on the internet and have followed courses from <a href="https://udemy.com" target="__blank">udemy.com</a> to gain a better understanding of React, NextJS, node, npm and other Javascript frameworks for web development. 
+        </p>
+      </section>
+      <section>
+        <h2>&nbsp;Motivation for a Secure but Affordable Web Server</h2>
+        <p>&nbsp;&nbsp;I wanted to have a secure web server on which I could safely view and develop web pages easily without them being publicly viewable until I was ready to open up access to them.  
+        <br>
+        &nbsp;&nbsp;I also wanted to be able to create many web servers in isolation so that I could work on various projects with ease.
+        <br>
+        &nbsp;&nbsp;And finally, I wanted to be able to do this without having to lease public I.P. addresses for each server that I was developing on. 
+        </p>
+      </section>
+      <section>
+        <h2>&nbsp;Elements of the Solution</h2>
+        <p>&nbsp;&nbsp;OVH is a cloud services provider with data centres located around Europe. I rent a bare metal dedicated server from <a href="https://ovhcloud.com/en-gb" target="__blank">OVH</a>. You can click the link to see their website for more information.  
+        <br>
+        &nbsp;&nbsp;Using their web interface I was able to install Proxmox VE 7, an open source hypervisor operating system that allows me to parcel the resources on the bare metal server into VMs and LXC containers.
+        <br>
+        &nbsp;&nbsp;My first VM was built using the <a href="https://opnsense.org/" target="__blank">OPNsense</a> operating system and acts as the firewall and gateway for my private VLAN.  The great thing about OPNsense is that it supports integration with OpenVPN. 
+        <br>
+        &nbsp;&nbsp;Using this functionality made it easier to install and configure the <a href="https://openvpn.net/community/" target="__blank">OpenVPN community edition</a> Virtual Private Network server.
+        <br>
+        &nbsp;&nbsp;And finally, by installing the OpenVPN GUI client and configuring it with the credentials from my server on my home pc, I am able to connect to my web server using a VPN Tunnel so I can access the private VLAN behind the firewall as private addresses on my home LAN.
+        </p>
+      </section>
+      <section>
+        <h2>&nbsp;A Picture Is Worth A Thousand Words </h2>
+        <p>&nbsp;&nbsp;Here is a schematic for the setup I am currently using. </p>
+        <hr>
+        <figcaption>&nbsp;&nbsp;<strong>Logical Schematic of my Web Development Setup</strong></figcaption>
+        <figure><img src="../img/schematic.jpg" width="90%"></figure>
+        <hr>
+        </section>
+        <section>
+          <h2>&nbsp;Security, Accessibility and Utility</h2>
+          <p>&nbsp;&nbsp;This arrangement gives me a secure way to develop websites in fully tailored, seperated environments on a site-by-site basis whilst ensuring that nobody but me can view the site over the internet until I am ready to publish it.
+          <br>
+          &nbsp;&nbsp;It also gives me the flexibility to develop on different base operating systems and software configurations without the overhead of needing seperate I.P. addresses for every site I'm developing.
+          <br>
+          &nbsp;&nbsp;Furthermore, I have the ability to issue VPN server credentials so that, if needed, I could collaborate with other developers by giving them limited access to the private LAN on the server side from their home pcs.
+          <br>
+          &nbsp;&nbsp;Finally, it has been an interesting tool with which to learn more about networking with linux distributions and web servers in general.
+          <br>
+          &nbsp;&nbsp;It gives me an affordable, flexible and practical solution to all my web development needs.
+        </section>
+    </main>
+
+    <hr>
+    <footer>
+      <img src="../img/footerBanner.jpg" alt="The dwarfs feet with technological paraphanaelia strewn on the floor" width="100%">
+      <h4>Made with ❤️ by KSD</h4>
+    </footer>
+    
+  </body>
+
+</html>

@@ -6,13 +6,6 @@ This webpage provides a multipage website with simple navigation between the fou
 It contains an ai art generated header and footer banner.
 It describes my three favourite hobbies on three seperate sub-pages.
 
-Table of Contents
-Included for your ease of use is a table of contents
-
-Installation
-Usage
-Credits
-
 Installation
 If you wish to work on the files for this project you can clone it onto your machine.
 
